@@ -1,0 +1,40 @@
+name: ramadan_appp
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.2
+
+dependencies:
+  flutter:
+     sdk: flutter
+  url_launcher: ^6.3.1
+  cupertino_icons: ^1.0.8
+  firebase_core: ^3.12.1
+  firebase_auth: ^5.5.1
+  cloud_firestore: ^5.6.5
+  firebase_storage: ^12.4.4
+  shared_preferences: ^2.5.2
+  geolocator: ^13.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: TheYearOfHandicrafts
+      fonts:
+        - asset: assets/fonts/the_year_of_handicrafts.otf
+
+  assets:
+    - assets/splash_logo.jpg
+    - assets/splach_screen.jpg
+    - assets/first_screen.jpg
+    - assets/image.jpg
+    - assets/background.jpg
+    

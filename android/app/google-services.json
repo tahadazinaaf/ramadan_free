@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "405433501328",
+    "project_id": "ramadan-appp",
+    "storage_bucket": "ramadan-appp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405433501328:android:723ae6a5f8d09d785aba15",
+        "android_client_info": {
+          "package_name": "com.example.ramadan_appp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEInPPjkgsaG49zStbs5DsT9AZEGEKr9Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
