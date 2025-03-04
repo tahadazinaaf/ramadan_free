@@ -1,5 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:ramadan_appp/screens/confirmation_screen.dart';
+import 'confirmation_screen.dart';
 
 class AddPlaceScreen extends StatefulWidget {
   const AddPlaceScreen({super.key});
@@ -26,21 +28,10 @@ class _AddPlaceScreenState extends State<AddPlaceScreen> {
       try {
         await FirebaseFirestore.instance.collection("places").add(placeData);
 
-        showDialog(
-          context: context,
-          builder: (context) => AlertDialog(
-            title: Text("تم إرسال الطلب"),
-            content: Text("سنقوم بمعالجة طلبك قريبًا."),
-            actions: [
-              TextButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                  Navigator.pop(context);
-                },
-                child: Text("حسنًا"),
-              ),
-            ],
-          ),
+        // Navigate to Confirmation Screen
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => ConfirmationScreen()),
         );
 
         _nameController.clear();

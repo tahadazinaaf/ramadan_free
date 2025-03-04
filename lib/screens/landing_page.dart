@@ -91,7 +91,7 @@ class _LandingPageState extends State<LandingPage> {
                   return CustomScrollView(
                     slivers: [
                       const SliverToBoxAdapter(
-                        child: SizedBox(height: 200),
+                        child: SizedBox(height: 100),
                       ),
                       SliverList(
                         delegate: SliverChildBuilderDelegate(
